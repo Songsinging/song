@@ -1,0 +1,76 @@
+[  0%] Built target _px4_command_generate_messages_check_deps_AuxiliaryState
+[  0%] Built target _px4_command_generate_messages_check_deps_Emergency
+[  0%] Built target _px4_command_generate_messages_check_deps_AttitudeReference
+[  0%] Built target _px4_command_generate_messages_check_deps_AddonForce
+[  0%] Built target _px4_command_generate_messages_check_deps_ControlCommand
+[  0%] Built target _px4_command_generate_messages_check_deps_SinglePayloadAction
+[  0%] Built target _px4_command_generate_messages_check_deps_HomePosition
+[  0%] Built target _px4_command_generate_messages_check_deps_ControlOutput
+[  0%] Built target _px4_command_generate_messages_check_deps_Trajectory
+[  0%] Built target _px4_command_generate_messages_check_deps_TrajectoryPoint
+[  0%] Built target _px4_command_generate_messages_check_deps_FleetStatus
+[  0%] Built target _px4_command_generate_messages_check_deps_SetHome
+[  0%] Built target _px4_command_generate_messages_check_deps_ControlParameter
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geographic_msgs_generate_messages_cpp
+[  0%] Built target _px4_command_generate_messages_check_deps_PayloadPoseCommand
+[  0%] Built target _px4_command_generate_messages_check_deps_MultiPayloadAction
+[  0%] Built target _px4_command_generate_messages_check_deps_GeneralInfo
+[  0%] Built target _px4_command_generate_messages_check_deps_AuxiliaryState_singleUAV
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target _px4_command_generate_messages_check_deps_DroneState
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target _px4_command_generate_messages_check_deps_Mocap
+[  0%] Built target _px4_command_generate_messages_check_deps_Topic_for_log
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geographic_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target geographic_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geographic_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[ 16%] Built target px4_command_generate_messages_cpp
+[ 16%] Built target geographic_msgs_generate_messages_eus
+[ 51%] Built target px4_command_generate_messages_nodejs
+[ 51%] Built target px4_command_generate_messages_py
+[ 67%] Built target px4_command_generate_messages_lisp
+[ 67%] Built target px4_command_gencpp
+[ 83%] Built target px4_command_generate_messages_eus
+[ 84%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/set_uav2_mode[0m
+[ 85%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/set_uav1_mode[0m
+[ 86%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/outdoorwifitest_ground[0m
+[ 88%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/outdoorwifitest[0m
+[ 89%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/px4_interdrone_communication[0m
+[ 89%] Built target set_uav1_mode
+[ 90%] Built target set_uav2_mode
+[ 90%] Built target px4_command_generate_messages
+[35m[1mScanning dependencies of target px4_multidrone_pos_controller[0m
+[ 91%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/set_uav0_mode[0m
+[ 92%] Built target outdoorwifitest
+[ 92%] [32mBuilding CXX object CMakeFiles/px4_multidrone_pos_controller.dir/src/px4_multidrone_pos_controller.cpp.o[0m
+[ 93%] Built target outdoorwifitest_ground
+[35m[1mScanning dependencies of target px4_multidrone_pos_estimator_outdoor[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/px4_multidrone_pos_estimator_outdoor.dir/src/px4_multidrone_pos_estimator_outdoor.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/px4_multidrone_pos_estimator[0m
+[ 96%] Built target set_uav0_mode
+[ 97%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/px4_multidrone_pos_estimator_pure_vision[0m
+[ 97%] Built target px4_interdrone_communication
+[ 97%] Built target px4_multidrone_pos_estimator
+[ 97%] Built target px4_multidrone_pos_estimator_pure_vision
+[ 98%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/px4_multidrone_pos_estimator_outdoor[0m
+[ 98%] Built target px4_multidrone_pos_estimator_outdoor
+[100%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/px4_command/lib/px4_command/px4_multidrone_pos_controller[0m
+[100%] Built target px4_multidrone_pos_controller

@@ -1,0 +1,45 @@
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geographic_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target geographic_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_GPSRAW
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_PathPlan
+[  0%] Built target geographic_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geographic_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target geographic_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  3%] [34m[1mGenerating C++ code from outdoor_gcs/PathPlan.msg[0m
+[  7%] [34m[1mGenerating Javascript code from outdoor_gcs/PathPlan.msg[0m
+[ 11%] [34m[1mGenerating Python from MSG outdoor_gcs/PathPlan[0m
+[ 15%] [34m[1mGenerating Lisp code from outdoor_gcs/PathPlan.msg[0m
+[ 19%] [34m[1mGenerating EusLisp code from outdoor_gcs/PathPlan.msg[0m
+[ 23%] Built target outdoor_gcs_generate_messages_nodejs
+[ 26%] Built target outdoor_gcs_generate_messages_lisp
+[ 34%] Built target outdoor_gcs_generate_messages_eus
+[ 42%] [34m[1mGenerating Python msg __init__.py for outdoor_gcs[0m
+[ 42%] [34m[1mGenerating Python srv __init__.py for outdoor_gcs[0m
+[ 46%] Built target outdoor_gcs_generate_messages_cpp
+[ 50%] [34m[1mAutomatic MOC, UIC and RCC for target outdoor_gcs[0m
+[ 50%] Built target outdoor_gcs_autogen
+[35m[1mScanning dependencies of target outdoor_gcs[0m
+[ 53%] Built target outdoor_gcs_generate_messages_py
+[ 57%] [32mBuilding CXX object CMakeFiles/outdoor_gcs.dir/src/qnode.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/outdoor_gcs.dir/include/outdoor_gcs/moc_qnode.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/outdoor_gcs.dir/src/main.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/outdoor_gcs.dir/include/outdoor_gcs/moc_main_window.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/outdoor_gcs.dir/src/main_window.cpp.o[0m
+[ 73%] Built target outdoor_gcs_generate_messages
+[ 76%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/outdoor_gcs/lib/outdoor_gcs/outdoor_gcs[0m
+[100%] Built target outdoor_gcs

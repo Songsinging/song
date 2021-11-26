@@ -1,0 +1,363 @@
+In file included from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:18:0[m[K:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:179:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K GetGPSH();
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:234:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gpsH;
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:242:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gps_home; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:27:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  void gpsH_callback(const [01;31m[KGpsHomePos[m[K::ConstPtr &msg);
+                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  void gpsH_callback(const GpsHomePos::ConstPtr [01;31m[K&[m[Kmsg);
+                                                [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  void gpsH_callback(const GpsHomePos::ConstPtr &[01;31m[Kmsg[m[K);
+                                                 [01;31m[K^~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:348:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uavs_gps_home[9]; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:[m[K In member function ‘[01m[Kbool outdoor_gcs::QNode::init()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:30:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ was not declared in this scope
+  uav_gpsH_sub  = n.subscribe<[01;31m[KGpsHomePos[m[K>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this);
+                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe<<expression error> >(const char [27], int, void (outdoor_gcs::QNode::*)(...) &, outdoor_gcs::QNode*)[m[K’
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:56:102:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  uav_gpsH_sub  = n.subscribe<GpsHomePos>("/mavros/home_position/home", 1, &QNode::gpsH_callback, this[01;31m[K)[m[K;
+                                                                                                      [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:61:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<GpsHomePos>(const char [29], int)[m[K’
+  uav_gps_home_pub = n.advertise<GpsHomePos>("/mavros/global_position/home", 1[01;31m[K)[m[K;
+                                                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:80:116:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<GpsHomePos>(std::__cxx11::basic_string<char>, int)[m[K’
+   uavs_gps_home_pub[i]   = n.advertise<GpsHomePos>("/uav" + std::to_string(i+1) + "/mavros/global_position/home", 1[01;31m[K)[m[K;
+                                                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:13[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:[m[K At global scope:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:198:33:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+ void QNode::gpsH_callback(const [01;31m[KGpsHomePos[m[K::ConstPtr &msg){
+                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:198:54:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+ void QNode::gpsH_callback(const GpsHomePos::ConstPtr [01;31m[K&[m[Kmsg){
+                                                      [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:198:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:198:55:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+ void QNode::gpsH_callback(const GpsHomePos::ConstPtr &[01;31m[Kmsg[m[K){
+                                                       [01;31m[K^~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::QNode::Set_GPS_Home()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:232:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav_gps_home[m[K’ was not declared in this scope
+  [01;31m[Kuav_gps_home[m[K.geo.latitude  = uav_gpsG.latitude;
+  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:232:2:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kuav_sethome[m[K’
+  [01;36m[Kuav_gps_home[m[K.geo.latitude  = uav_gpsG.latitude;
+  [01;36m[K^~~~~~~~~~~~[m[K
+  [32m[Kuav_sethome[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:[m[K At global scope:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:306:1:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+ [01;31m[KGpsHomePos[m[K QNode::GetGPSH(){
+ [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::QNode::uavs_pub_command()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:347:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kuavs_gps_home[m[K’ was not declared in this scope
+    uavs_gps_home_pub[ind].publish([01;31m[Kuavs_gps_home[m[K[ind]);
+                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:347:35:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kuavs_gps_sub[m[K’
+    uavs_gps_home_pub[ind].publish([01;36m[Kuavs_gps_home[m[K[ind]);
+                                   [01;36m[K^~~~~~~~~~~~~[m[K
+                                   [32m[Kuavs_gps_sub[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::QNode::Set_GPS_Home_uavs(int, int)[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:453:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kuavs_gps_home[m[K’ was not declared in this scope
+  [01;31m[Kuavs_gps_home[m[K[host_ind].geo.latitude  = uavs_gpsG[origin_ind].latitude;
+  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/qnode.cpp:453:2:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kuavs_gps_sub[m[K’
+  [01;36m[Kuavs_gps_home[m[K[host_ind].geo.latitude  = uavs_gpsG[origin_ind].latitude;
+  [01;36m[K^~~~~~~~~~~~~[m[K
+  [32m[Kuavs_gps_sub[m[K
+In file included from [01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/moc_qnode.cpp:9:0[m[K:
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:179:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K GetGPSH();
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:234:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gpsH;
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:242:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gps_home; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:27:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  void gpsH_callback(const [01;31m[KGpsHomePos[m[K::ConstPtr &msg);
+                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  void gpsH_callback(const GpsHomePos::ConstPtr [01;31m[K&[m[Kmsg);
+                                                [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  void gpsH_callback(const GpsHomePos::ConstPtr &[01;31m[Kmsg[m[K);
+                                                 [01;31m[K^~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:348:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uavs_gps_home[9]; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/outdoor_gcs.dir/include/outdoor_gcs/moc_qnode.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/main_window.hpp:18:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/moc_main_window.cpp:9[m[K:
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:179:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K GetGPSH();
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:234:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gpsH;
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:242:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gps_home; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:27:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  void gpsH_callback(const [01;31m[KGpsHomePos[m[K::ConstPtr &msg);
+                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  void gpsH_callback(const GpsHomePos::ConstPtr [01;31m[K&[m[Kmsg);
+                                                [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:266:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  void gpsH_callback(const GpsHomePos::ConstPtr &[01;31m[Kmsg[m[K);
+                                                 [01;31m[K^~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/build/outdoor_gcs/include/outdoor_gcs/../../../../src/outdoor_gcs/include/outdoor_gcs/qnode.hpp:348:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uavs_gps_home[9]; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/outdoor_gcs.dir/src/qnode.cpp.o] Error 1
+make[2]: *** [CMakeFiles/outdoor_gcs.dir/include/outdoor_gcs/moc_main_window.cpp.o] Error 1
+In file included from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/main_window.hpp:18:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:15[m[K:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:179:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K GetGPSH();
+  [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/main_window.hpp:18:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main.cpp:14[m[K:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:179:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K GetGPSH();
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:234:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gpsH;
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:234:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gpsH;
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:242:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gps_home; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:242:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uav_gps_home; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:27:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  void gpsH_callback(const [01;31m[KGpsHomePos[m[K::ConstPtr &msg);
+                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  void gpsH_callback(const GpsHomePos::ConstPtr [01;31m[K&[m[Kmsg);
+                                                [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  void gpsH_callback(const GpsHomePos::ConstPtr &[01;31m[Kmsg[m[K);
+                                                 [01;31m[K^~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:27:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  void gpsH_callback(const [01;31m[KGpsHomePos[m[K::ConstPtr &msg);
+                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  void gpsH_callback(const GpsHomePos::ConstPtr [01;31m[K&[m[Kmsg);
+                                                [01;31m[K^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:266:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  void gpsH_callback(const GpsHomePos::ConstPtr &[01;31m[Kmsg[m[K);
+                                                 [01;31m[K^~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:348:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uavs_gps_home[9]; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:348:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ does not name a type
+  [01;31m[KGpsHomePos[m[K uavs_gps_home[9]; //origin of gps local
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::MainWindow::updateuav()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:280:2:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsHomePos[m[K’ was not declared in this scope
+  [01;31m[KGpsHomePos[m[K gpsH_data = qnode.GetGPSH();
+  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:47:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::w[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_w_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {[01;35m[Kimu_data.orientation.w[m[K, imu_data.orientation.x, imu_data.orientation.y, imu_data.orientation.z};
+                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:71:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::x[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_x_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {imu_data.orientation.w, [01;35m[Kimu_data.orientation.x[m[K, imu_data.orientation.y, imu_data.orientation.z};
+                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:95:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::y[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_y_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, [01;35m[Kimu_data.orientation.y[m[K, imu_data.orientation.z};
+                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:119:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::z[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_z_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, imu_data.orientation.y, [01;35m[Kimu_data.orientation.z[m[K};
+                                                                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:366:40:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsH_data[m[K’ was not declared in this scope
+   ui.localx_2->setText(QString::number([01;31m[KgpsH_data[m[K.position.x, 'f', 6));
+                                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:366:40:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KgpsL_data[m[K’
+   ui.localx_2->setText(QString::number([01;36m[KgpsH_data[m[K.position.x, 'f', 6));
+                                        [01;36m[K^~~~~~~~~[m[K
+                                        [32m[KgpsL_data[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::MainWindow::updateInfoLogger()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1287:55:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::w[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_w_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {[01;35m[Kimu_data.orientation.w[m[K, imu_data.orientation.x, imu_data.orientation.y, imu_data.orientation.z};
+                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1287:79:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::x[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_x_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, [01;35m[Kimu_data.orientation.x[m[K, imu_data.orientation.y, imu_data.orientation.z};
+                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1287:103:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::y[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_y_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, [01;35m[Kimu_data.orientation.y[m[K, imu_data.orientation.z};
+                                                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1287:127:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::z[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_z_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, imu_data.orientation.y, [01;35m[Kimu_data.orientation.z[m[K};
+                                                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:55:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::w[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_w_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {[01;35m[Kimu_data.orientation.w[m[K, imu_data.orientation.x, imu_data.orientation.y, imu_data.orientation.z};
+                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:79:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::x[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_x_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, [01;35m[Kimu_data.orientation.x[m[K, imu_data.orientation.y, imu_data.orientation.z};
+                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:103:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::y[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_y_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, [01;35m[Kimu_data.orientation.y[m[K, imu_data.orientation.z};
+                                                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:127:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::z[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_z_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, imu_data.orientation.y, [01;35m[Kimu_data.orientation.z[m[K};
+                                                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+make[2]: *** [CMakeFiles/outdoor_gcs.dir/src/main.cpp.o] Error 1
+make[2]: *** [CMakeFiles/outdoor_gcs.dir/src/main_window.cpp.o] Error 1
+make[1]: *** [CMakeFiles/outdoor_gcs.dir/all] Error 2
+make: *** [all] Error 2

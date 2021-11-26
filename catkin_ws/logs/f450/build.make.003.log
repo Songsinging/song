@@ -1,0 +1,19 @@
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _f450_generate_messages_check_deps_RTCM
+[ 15%] Built target f450_generate_messages_py
+[ 23%] Built target f450_generate_messages_lisp
+[ 30%] Built target f450_generate_messages_cpp
+[ 46%] Built target f450_generate_messages_eus
+[ 53%] Built target f450_generate_messages_nodejs
+[ 53%] Built target f450_gencpp
+[ 53%] Built target f450_generate_messages
+[ 61%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/f450/lib/f450/control0[0m
+[ 69%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/f450/lib/f450/set_mode_1[0m
+[ 76%] [32m[1mLinking CXX executable /home/mhviolentsky/catkin_ws/devel/.private/f450/lib/f450/set_mode_2[0m
+[ 92%] Built target set_mode_2
+[ 92%] Built target set_mode_1
+[100%] Built target control0

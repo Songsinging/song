@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/mhviolentsky/catkin_ws/src/px4_command/msg/AuxiliaryState.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/AuxiliaryState_singleUAV.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/ControlCommand.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/TrajectoryPoint.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/Trajectory.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/AttitudeReference.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/DroneState.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/Topic_for_log.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/ControlOutput.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/Mocap.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/AddonForce.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/FleetStatus.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/PayloadPoseCommand.msg;/home/mhviolentsky/catkin_ws/src/px4_command/msg/HomePosition.msg"
+services_str = "/home/mhviolentsky/catkin_ws/src/px4_command/srv/ControlParameter.srv;/home/mhviolentsky/catkin_ws/src/px4_command/srv/Emergency.srv;/home/mhviolentsky/catkin_ws/src/px4_command/srv/GeneralInfo.srv;/home/mhviolentsky/catkin_ws/src/px4_command/srv/SinglePayloadAction.srv;/home/mhviolentsky/catkin_ws/src/px4_command/srv/MultiPayloadAction.srv;/home/mhviolentsky/catkin_ws/src/px4_command/srv/SetHome.srv"
+pkg_name = "px4_command"
+dependencies_str = "geometry_msgs;sensor_msgs;std_msgs;nav_msgs;geographic_msgs"
+langs = "gencpp;geneus;genlisp;gennodejs;genpy"
+dep_include_paths_str = "px4_command;/home/mhviolentsky/catkin_ws/src/px4_command/msg;geometry_msgs;/opt/ros/melodic/share/geometry_msgs/cmake/../msg;sensor_msgs;/opt/ros/melodic/share/sensor_msgs/cmake/../msg;std_msgs;/opt/ros/melodic/share/std_msgs/cmake/../msg;nav_msgs;/opt/ros/melodic/share/nav_msgs/cmake/../msg;geographic_msgs;/opt/ros/melodic/share/geographic_msgs/cmake/../msg;actionlib_msgs;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;uuid_msgs;/opt/ros/melodic/share/uuid_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python2"
+package_has_static_sources = '' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

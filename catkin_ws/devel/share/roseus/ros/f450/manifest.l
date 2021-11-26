@@ -1,0 +1,1 @@
+/home/mhviolentsky/catkin_ws/devel/.private/f450/share/roseus/ros/f450/manifest.l

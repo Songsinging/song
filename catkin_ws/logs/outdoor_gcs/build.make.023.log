@@ -1,0 +1,77 @@
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geographic_msgs_generate_messages_cpp
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_SinglePayloadAction
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_ControlParameter
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_GeneralInfo
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_GPSRAW
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_PathPlan
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geographic_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target _outdoor_gcs_generate_messages_check_deps_MultiPayloadAction
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target geographic_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geographic_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target geographic_msgs_generate_messages_eus
+[ 13%] Built target outdoor_gcs_generate_messages_nodejs
+[ 30%] Built target outdoor_gcs_generate_messages_py
+[ 43%] Built target outdoor_gcs_generate_messages_lisp
+[ 56%] Built target outdoor_gcs_generate_messages_cpp
+[ 71%] Built target outdoor_gcs_generate_messages_eus
+[ 73%] [34m[1mAutomatic MOC, UIC and RCC for target outdoor_gcs[0m
+[ 73%] Built target outdoor_gcs_generate_messages
+[ 73%] Built target outdoor_gcs_autogen
+[35m[1mScanning dependencies of target outdoor_gcs[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/outdoor_gcs.dir/src/main_window.cpp.o[0m
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::MainWindow::updateuav()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:47:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::w[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_w_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {[01;35m[Kimu_data.orientation.w[m[K, imu_data.orientation.x, imu_data.orientation.y, imu_data.orientation.z};
+                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:71:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::x[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_x_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {imu_data.orientation.w, [01;35m[Kimu_data.orientation.x[m[K, imu_data.orientation.y, imu_data.orientation.z};
+                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:95:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::y[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_y_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, [01;35m[Kimu_data.orientation.y[m[K, imu_data.orientation.z};
+                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:289:119:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::z[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_z_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+         float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, imu_data.orientation.y, [01;35m[Kimu_data.orientation.z[m[K};
+                                                                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:[m[K In member function ‘[01m[Kvoid outdoor_gcs::MainWindow::updateInfoLogger()[m[K’:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1288:79:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Koutdoor_gcs::QNode::quaternion_to_euler(double [4])[m[K’
+                 outdoor_gcs::Angles uav_euler = qnode.quaternion_to_euler(quat[01;31m[K)[m[K;
+                                                                               [01;31m[K^[m[K
+In file included from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/main_window.hpp:18:0[m[K,
+                 from [01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:15[m[K:
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:219:22:[m[K [01;36m[Knote: [m[Kcandidate: outdoor_gcs::Angles outdoor_gcs::QNode::quaternion_to_euler(float*)
+  outdoor_gcs::Angles [01;36m[Kquaternion_to_euler[m[K(float quat[4]);
+                      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/../include/outdoor_gcs/qnode.hpp:219:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble [4][m[K’ to ‘[01m[Kfloat*[m[K’
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:55:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::w[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_w_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {[01;35m[Kimu_data.orientation.w[m[K, imu_data.orientation.x, imu_data.orientation.y, imu_data.orientation.z};
+                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:79:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::x[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_x_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, [01;35m[Kimu_data.orientation.x[m[K, imu_data.orientation.y, imu_data.orientation.z};
+                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:103:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::y[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_y_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, [01;35m[Kimu_data.orientation.y[m[K, imu_data.orientation.z};
+                                                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/mhviolentsky/catkin_ws/src/outdoor_gcs/src/main_window.cpp:1373:127:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kimu_data.sensor_msgs::Imu_<std::allocator<void> >::orientation.geometry_msgs::Quaternion_<std::allocator<void> >::z[m[K’ from ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_z_type {aka double}[m[K’ to ‘[01m[Kfloat[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+                 float quat[4] = {imu_data.orientation.w, imu_data.orientation.x, imu_data.orientation.y, [01;35m[Kimu_data.orientation.z[m[K};
+                                                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+CMakeFiles/outdoor_gcs.dir/build.make:103: recipe for target 'CMakeFiles/outdoor_gcs.dir/src/main_window.cpp.o' failed
+make[2]: *** [CMakeFiles/outdoor_gcs.dir/src/main_window.cpp.o] Error 1
+CMakeFiles/Makefile2:68: recipe for target 'CMakeFiles/outdoor_gcs.dir/all' failed
+make[1]: *** [CMakeFiles/outdoor_gcs.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

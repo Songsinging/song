@@ -1,0 +1,13 @@
+[31m[1mCMake Error[0m at /home/mhviolentsky/catkin_ws/build/outdoor_gcs/cmake/outdoor_gcs-genmsg.cmake:3 (message):
+  Could not find messages which
+  '/home/mhviolentsky/catkin_ws/src/outdoor_gcs/msg/Topic_for_log.msg'
+  depends on.  Did you forget to specify generate_messages(DEPENDENCIES ...)?
+
+  Cannot locate message [ControlCommand] in package [outdoor_gcs] with paths
+  [['/home/mhviolentsky/catkin_ws/src/outdoor_gcs/msg']]
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:64 (generate_messages)
+
+
+make: *** [cmake_check_build_system] Error 1

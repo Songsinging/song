@@ -1,0 +1,1 @@
+/home/mhviolentsky/catkin_ws/devel/.private/outdoor_gcs/lib/python2.7/dist-packages/outdoor_gcs/srv/_GeneralInfo.py

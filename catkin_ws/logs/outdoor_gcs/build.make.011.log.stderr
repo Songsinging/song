@@ -1,0 +1,4 @@
+make[2]: *** No rule to make target '/home/mhviolentsky/catkin_ws/src/outdoor_gcs/include/outdoor_gcs/qnode.hpp', needed by 'include/outdoor_gcs/moc_qnode.cpp'.  Stop.
+make[1]: *** [CMakeFiles/outdoor_gcs.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

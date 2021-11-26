@@ -1,0 +1,1 @@
+/home/mhviolentsky/catkin_ws/devel/.private/outdoor_gcs/share/roseus/ros/outdoor_gcs/msg/Trajectory.l

@@ -1,0 +1,8 @@
+prefix=/home/mhviolentsky/catkin_ws/devel/.private/f450
+
+Name: f450
+Description: Description of f450
+Version: 0.0.0
+Cflags: -I/home/mhviolentsky/catkin_ws/devel/.private/f450/include
+Libs: -L${prefix}/lib 
+Requires: 
